@@ -22,8 +22,8 @@ impl Data {
             return Err(format_err!("offset is too small"));
         }
 
-        let mut plain_text;
-        let mut cipher_text;
+        let plain_text;
+        let cipher_text;
 
         if args.auto_find {
             let (a, b) = auto_load_file(
