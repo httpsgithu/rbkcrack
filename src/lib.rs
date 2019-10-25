@@ -40,13 +40,13 @@ pub struct Arguments {
     #[structopt(
         short = "p",
         long,
-        raw(required_unless_one = r#"&["keys", "auto_find"]"#),
+        required_unless_one = &["keys", "auto_find"],
         allow_hyphen_values = true
     )]
     pub plain_file: Option<String>,
 
     /// Internal password representation as three 32-bits integers in hexadecimal (requires -d)
-    #[structopt(short = "k", long, parse(try_from_str = "parse_hex"))]
+    #[structopt(short = "k", long, parse(try_from_str = parse_hex))]
     pub keys: Vec<u32>,
 
     /// Zip archive containing cipher_file
