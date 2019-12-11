@@ -5,6 +5,7 @@ Crack legacy zip encryption with Biham and Kocher's known plaintext attack.
 
 (Fork from bkcrak.)
 
+[![CI](https://github.com/Aloxaf/rbkcrack/workflows/CI/badge.svg)](https://github.com/Aloxaf/rbkcrack/actions?query=workflow%3ACI)
 [![Linux build status](https://travis-ci.org/Aloxaf/rbkcrack.svg)](https://travis-ci.org/Aloxaf/rbkcrack)
 [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=Aloxaf/rbkcrack)](https://dependabot.com)
 
