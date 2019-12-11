@@ -35,10 +35,9 @@ jobs:
           args: -- --check
 
       - name: Cargo clippy
-        uses: actions-rs/clippy-check@v1
+        uses: actions-rs/cargo@v1
         with:
-          token: ${{ secrets.ACCESS_TOKEN }}
-          args: --all-features
+          command: clippy
 
       - name: Cargo check
         uses: actions-rs/cargo@v1
